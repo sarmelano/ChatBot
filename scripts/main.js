@@ -1,7 +1,7 @@
 let answers = ["Привет!", "Как дела?", "Что ты делаешь?", "Понятно", "Хорошо", "До встречи!"];
 let isChatting = true;
 
-function ByeBye () {
+function byeBye () {
     isChatting = false;
     document.getElementById('user-input').placeholder = 'Чат завершён';
 }
@@ -36,14 +36,14 @@ document.querySelector('#user-input').addEventListener('keypress', function(e) {
 
         if (userText.toLowerCase() === 'пока') {
             addToChat("Спасибо за беседу! До свидания!");
-            ByeBye();
+            byeBye();
             e.target.disabled = true; 
         } else {
             let randomTime = Math.floor(Math.random() * 10000) + 1000;
             let randomAnswer = answers[Math.floor(Math.random() * answers.length)];
             botResponse(randomTime, randomAnswer).then(() => {
                 if (randomAnswer === "До встречи!") {
-                    ByeBye();
+                    byeBye();
                     e.target.disabled = true; 
                 }
             });
