@@ -64,7 +64,7 @@ body {
   border-radius: 20px;
 }
 
-.test {
+.message-wrapper {
   display: flex;
   justify-content: space-between;
 }
