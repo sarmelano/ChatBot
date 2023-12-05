@@ -21,7 +21,7 @@ body {
 
 #chat {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   flex-grow: 1;
   padding: 10px;
   overflow-y: auto;
@@ -29,10 +29,12 @@ body {
 }
 
 #user-input {
+  width: 80%;
   padding: 10px;
   border: none;
   outline: none;
 }
+
 /*message prep*/
 .bot_answer {
   width: fit-content;
@@ -60,4 +62,22 @@ body {
   background-color: rgba(54, 19, 230, 0.1);
   font-size: 0.85rem;
   border-radius: 20px;
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
+}
+
+#send-button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin: 6px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+#send-button:hover {
+  background-color: rgb(0, 0, 255, 0.1);
 }
